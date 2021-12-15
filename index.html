@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Sarah Myerson</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <script src="/js/jquery.backstretch.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/retina-1.1.0.min.js"></script>
+    <script src="/js/waypoints.min.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans_old:400,500,700|Google+Sans+Text:400">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
+      <div class="container">
+          <a class="navbar-brand" href="index.html">Sarah</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#portfolio">Work</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" target="_blank" href="/files/Sarah_Myerson_Resume.pdf">Resume</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#contact">Contact</a>
+                  </li>
+              </ul>
+      </div>
+    </nav>
+
+    <div class="home">
+      <div class="container">
+
+          <div class="row">
+              <div class="col-md-8 offset-md-2 text">
+                  <div class="myphoto">
+                    <img src="/img/latest_personal.png" alt="image">
+                  </div>
+                  <h1 class="wow fadeInLeftBig">Hello, I'm Sarah</h1>
+                  <h3 id="typewriter"></h3>
+              </div>
+          </div>
+
+      </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="about-container section-container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+              <div class="about-box-text">
+                <h3>About Me</h3>
+              	<p class="medium-paragraph">
+              		I am a Web Developer with a passion for creating high quality products that
+                  integrate the latest technologies and concepts.
+              	</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="fill">
+                <img class="about_feature_half" src="/img/half-block.jpeg" alt="" />
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Section -->
+  <div class="portfolio-container section-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"></div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact-container section-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"></div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    var app = document.getElementById('typewriter');
+
+    var typewriter = new Typewriter(app, {
+        loop: true
+    });
+
+    typewriter.typeString('Web Developer')
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString('Database Admin')
+        .pauseFor(2500)
+        .start();
+  </script>
+  </body>
+</html>
