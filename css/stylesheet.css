@@ -42,18 +42,11 @@ h1, h2 {
     overflow: hidden;
 }
 
-.fill
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden
-}
-.fill img
-{
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .medium-paragraph {
@@ -68,7 +61,6 @@ h1, h2 {
 
 
 /** General styles for each section **/
-
 .section-container {
     margin: 0 auto;
     padding-bottom: 80px;
@@ -94,8 +86,8 @@ h1, h2 {
 }
 
 .section-description p {
-  margin-top: 20px;
-  padding: 0 120px;
+    margin-top: 20px;
+	padding: 0 120px;
 }
 .section-container-image-bg .section-description p {
 	opacity: 0.8;
@@ -261,36 +253,62 @@ h1, h2 {
 }
 
 /** About **/
-
-.about-box {
+.about-us-box {
 	margin-top: 100px;
 }
 
-.about-box-text
-{
-  margin-top: 100px;
-  padding-right: 30px;
-  text-align: left;
+.about-us-box-text {
+	padding-right: 30px;
+	text-align: left;
 }
 
-.about-box-text h3 {
+.about-us-box-text h3 {
 	margin-top: 0;
 }
 
-.about-box-text .medium-paragraph
-{
+.about-us-box-text .medium-paragraph {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
-.about-box-text a { border-bottom: 1px dashed #9b59b6; }
-.about-box-text a:hover, .about-us-box-text a:focus { border: 0; }
+.about-us-box-text a { border-bottom: 1px dashed #9b59b6; }
+.about-us-box-text a:hover, .about-us-box-text a:focus { border: 0; }
 
-.about-box-img img {
+.about-us-box-img img {
 	border-radius: 4px;
 }
 
-.about-box h3 {
-	margin-top: 0;
-	padding: 0 0 10px 0;
+/** Footer **/
+footer {
+	padding: 40px 0 0 0;
+	background: #444;
+	color: #aaa;
+	text-align: left;
 }
+
+.footer-left a { color: #ddd; border-bottom: 1px dashed #ddd; }
+.footer-left a:hover, .footer-left a:focus { color: #ddd; border: 0; }
+
+.footer-right {
+	text-align: right;
+}
+
+.footer-right a {
+	margin: 0 6px;
+    font-size: 32px;
+    color: #aaa;
+}
+.footer-right a:hover, .footer-right a:focus { color: #eee; }
+
+.footer-bottom {
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+.footer-bottom a {
+	font-size: 32px;
+    color: #666;
+    line-height: 40px;
+}
+
+.footer-bottom a:hover, .footer-bottom a:focus { color: #888; }
