@@ -253,29 +253,48 @@ h1, h2 {
 }
 
 /** About **/
-.about-us-box {
+.about-me-box {
 	margin-top: 100px;
 }
 
-.about-us-box-text {
+.about-me-box-text {
 	padding-right: 30px;
 	text-align: left;
 }
 
-.about-us-box-text h3 {
+.about-me-box-text h3 {
 	margin-top: 0;
 }
 
-.about-us-box-text .medium-paragraph {
+.about-me-box-text .medium-paragraph {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
-.about-us-box-text a { border-bottom: 1px dashed #9b59b6; }
-.about-us-box-text a:hover, .about-us-box-text a:focus { border: 0; }
+.about-me-box-text a { border-bottom: 1px dashed #9b59b6; }
+.about-me-box-text a:hover, .about-me-box-text a:focus { border: 0; }
 
-.about-us-box-img img {
+.about-me-box-img img {
 	border-radius: 4px;
+}
+
+/** Contact **/
+.contact-box {
+	margin-top: 100px;
+}
+
+.contact-box-text {
+	padding-right: 30px;
+	text-align: left;
+}
+
+.contact-box-text h2 {
+	margin-top: 0;
+}
+
+.contact-box-text .medium-paragraph {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 /** Footer **/
