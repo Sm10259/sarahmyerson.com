@@ -88,8 +88,9 @@
                   <b>I'm a software engineer in Orlando, Florida &#x2694;</b>
                 </p>
                 <p>
-                  I currently work as a systems engineering intern at the Walt Disney World Resort. I am an alumni from the University of Central Florida where I recieved my undergraduate in Computer Science.
-                  I am passionate about using creating interactive experiences using technology. I also manage the technlogy and digital experiences for <a href="https://imagineeringparks.com">Imagineering Parks</a>.
+                  I currently work as a systems engineer at the Walt Disney World Resort. I am an alumni from the University of Central Florida where I recieved my undergraduate in Computer Science.
+                  I am passionate about using creating interactive experiences and products using technology. I also manage the technlogy and digital experiences for <a href="https://imagineeringparks.com">Imagineering Parks</a>
+                  and develop open-source extensions for Bukkit based Minecraft servers.
                 </p>
                 <p>
                   This website is a showcase of things I have done and some experiments I've created in the past. I also enjoy creative writing, distance running, and theme park design! &#x1F47B;
@@ -117,29 +118,58 @@
         </div>
 
         <div class="row">
+          <div class="col portfolio button-group wow fadeIn" id="portfolio_button_controls">
+            <button class="btn btn-link-1 active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn btn-link-1" onclick="filterSelection('sims')"> Simulation</button>
+            <button class="btn btn-link-1" onclick="filterSelection('arduino')"> Arduino</button>
+            <button class="btn btn-link-1" onclick="filterSelection('java')"> Java</button>
+            <button class="btn btn-link-1" onclick="filterSelection('web')"> Web Development</button>
+          </div>
+        </div>
 
-          <div class="col-md-4 portfolio-box wow fadeInDown">
-            <h3>Walt Disney Parks & Resorts Internship</h3>
+        <div class="row">
+          <div class="col-md-4 portfolio-box wow fadeIn filterDiv sims">
+            <h3>Systems Engineer at Disney</h3>
 
             <div class="portfolio-box-date">
-              <a href="https://disneyworld.com/"><i class="fas fa-building"></i> Walt Disney World</a> <i class="fas fa-angle-right"></i>
+              <a href="https://disneyworld.com/"><i class="fas fa-building"></i> Walt Disney World</a>
             </div>
 
-            <p>Supporting the Guest Experience by optimizing the development pipeline of attraction hardware-in-the-loop simulations and digital twins.</p>
+            <p>Create simulations of ride control systems and develop software tools to support simulation efforts.</p>
           </div>
 
-          <div class="col-md-4 portfolio-box wow fadeInDown">
-            <h3>Project R7D6</h3>
+          <div class="col-md-4 portfolio-box wow fadeIn filterDiv sims">
+            <h3>Disney Parks Engineering Internship</h3>
+
+            <div class="portfolio-box-date">
+              <a href="https://disneyworld.com/"><i class="fas fa-building"></i> Walt Disney World</a>
+            </div>
+
+            <p>Build hardware-in-the-loop simulations, data playback visualization, digital twins for ride control systems.</p>
+          </div>
+
+          <div class="col-md-4 portfolio-box wow fadeIn filterDiv arduino">
+            <h3>Arduino Parking Sensor</h3>
+
+            <div class="portfolio-box-date">
+              <a href="https://github.com/Sm10259/parking-helper"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+
+            <p>A simple parking sensor built with an Arduino Nano Every, ultrasonic sensor, potentiometer, and an LCD display.</p>
+          </div>
+
+          <div class="col-md-4 portfolio-box wow fadeIn filterDiv arduino">
+            <h3><a href="https://sm10259-r7d6.herokuapp.com/">Project R7D6 <i class="fas fa-angle-right"></i></a></h3>
 
             <div class="portfolio-box-date">
               <a href="https://github.com/Sm10259/r7d6"><i class="fab fa-github"></i> GitHub</a>
             </div>
 
-            <p>Autonomous mobile robot using Arduinos and a Star Wars Galaxy's Edge Droid Depot astromech unit.</p>
+            <p>Autonomous mobile robot using an Arduino Micro, ultrasonic sensor, and a Star Wars Galaxy's Edge Droid Depot astromech unit.</p>
           </div>
 
-          <div class="col-md-4 portfolio-box wow fadeInDown">
-            <h3><a href="https://dev.brpromedia.com/">Nashville Insider</a> <i class="fas fa-angle-right"></i></h3>
+          <div class="col-md-4 portfolio-box wow fadeIn filterDiv web">
+            <h3><a href="https://dev.brpromedia.com/">Nashville Insider <i class="fas fa-angle-right"></i></a></h3>
             <div class="portfolio-box-date">
               <a href="https://www.cecs.ucf.edu/SeniorDesignShowcase/best-in-senior-design/#fall-2022"><i class="fas fa-building"></i> Nashville Insider and UCF CECS</a>
             </div>
@@ -147,8 +177,8 @@
             <p>Video on demand streaming platform for Nashville Insider's news series created for my undergraduate capstone project.</p>
           </div>
 
-          <div class="col-md-4 portfolio-box wow fadeInUp">
-            <h3>OP Stats</h3>
+          <div class="col-md-4 portfolio-box wow fadeIn filterDiv web">
+            <h3><a href="https://imagineeringparks.com/ops/">OP Stats <i class="fas fa-angle-right"></i></a></h3>
             <div class="portfolio-box-date">
               <a href="https://imagineeringparks.com/"><i class="fas fa-building"></i> Imagineering Parks</a>
             </div>
@@ -156,7 +186,7 @@
             <p>Real-time data collection and analysis tools.</p>
           </div>
 
-          <div class="col-md-4 portfolio-box wow fadeInUp">
+          <div class="col-md-4 portfolio-box wow fadeIn filterDiv java">
             <h3>Queues</h3>
             <div class="portfolio-box-date">
               <a href="https://imagineeringparks.com/"><i class="fas fa-building"></i> Imagineering Parks</a>
@@ -165,8 +195,8 @@
             <p>Manage access to areas or start ride and show sequences with a timedelayed queue.</p>
           </div>
 
-          <div class="col-md-4 portfolio-box wow fadeInUp">
-            <h3><a href="https://www.spigotmc.org/resources/schematic-utility.98658/">Schematic Utility</a> <i class="fas fa-angle-right"></i></h3>
+          <div class="col-md-4 portfolio-box wow fadeIn filterDiv java">
+            <h3><a href="https://www.spigotmc.org/resources/schematic-utility.98658/">Schematic Utility <i class="fas fa-angle-right"></i></a></h3>
 
             <div class="portfolio-box-date">
               <a href="https://github.com/ImagineeringParks/schematic-utility"><i class="fab fa-github"></i> GitHub</a>
@@ -175,37 +205,37 @@
             <p>Open-source Bukkit plugin to manage WorldEdit schematics.</p>
           </div>
 
-          <div class="col-md-4 portfolio-box wow fadeInDown">
+          <div class="col-md-4 portfolio-box wow fadeIn filterDiv web">
             <h3>Digital Bookstore</h3>
 
             <div class="portfolio-box-date">
               <a href="https://github.com/COP-4710-Group-29/Bookstore"><i class="fab fa-github"></i> GitHub</a>
             </div>
 
-            <p>Online bookstore ordering system for COP 4710.</p>
+            <p>Online bookstore ordering system for Database Management Systems, Fall 2021.</p>
           </div>
 
-          <div class="col-md-4 portfolio-box wow fadeInDown">
+          <div class="col-md-4 portfolio-box wow fadeIn filterDiv web">
             <h3>Jumble</h3>
 
             <div class="portfolio-box-date">
               <a href="https://github.com/COP-4331-LargeProject/Jumble"><i class="fab fa-github"></i> GitHub</a>
             </div>
 
-            <p>Spotify music recommender with like and dislike abilities, made for COP 4331.</p>
+            <p>Spotify music recommender with like and dislike abilities, made for Processes for Object-Oriented Software Development, Summer 2021.</p>
           </div>
 
-          <div class="col-md-4 portfolio-box wow fadeInDown">
+          <div class="col-md-4 portfolio-box wow fadeIn filterDiv web">
             <h3>Rolodex</h3>
 
             <div class="portfolio-box-date">
               <a href="https://github.com/COP-4331-Rolodex/Small-Project"><i class="fab fa-github"></i> GitHub</a>
             </div>
 
-            <p>Digital contact manager created with a LAMP stack, made for COP 4331.</p>
+            <p>Digital contact manager created with a LAMP stack, made for Processes for Object-Oriented Software Development, Summer 2021.</p>
           </div>
 
-          <div class="col-md-4 portfolio-box wow fadeInUp">
+          <div class="col-md-4 portfolio-box wow fadeIn filterDiv web">
             <h3>Express Ordering</h3>
 
             <div class="portfolio-box-date">
@@ -215,7 +245,7 @@
             <p>Mobile food ordering system utilizing Node.js</p>
           </div>
 
-          <div class="col-md-4 portfolio-box wow fadeInUp">
+          <div class="col-md-4 portfolio-box wow fadeIn filterDiv web">
             <h3>Battle of the Books Online</h3>
 
             <div class="portfolio-box-date">
@@ -252,7 +282,7 @@
           <a href="https://home.sarahmyerson.com" target="_blank">
             <p>Intranet Access</p>
           </a>
-          <a href="https://r7d6.sarahmyerson.com" target="_blank">
+          <a href="https://sm10259-r7d6.herokuapp.com/" target="_blank">
             <p>R7D6 Control Hub</p>
           </a>
         </div>
@@ -293,8 +323,77 @@
         .typeString('Systems Engineer')
         .pauseFor(2500)
         .deleteAll()
-        .typeString('Fullstack Developer')
+        .typeString('Scrum Master')
+        .pauseFor(2500)
+        .deleteAll()
         .start();
+  </script>
+
+  <script>
+  filterSelection("all")
+
+  function filterSelection(c)
+  {
+    console.log(c);
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all")
+    {
+      c = "";
+    }
+
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++)
+    {
+      removeClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1)
+      {
+        addClass(x[i], "show");
+      }
+    }
+  }
+
+  // Show filtered elements
+  function addClass(element, name)
+  {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++)
+    {
+      if (arr1.indexOf(arr2[i]) == -1)
+      {
+        element.className += " " + arr2[i];
+      }
+    }
+  }
+
+  // Hide elements that are not selected
+  function removeClass(element, name)
+  {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+  // Add active class to the current control button (highlight it)
+  var btnContainer = document.getElementById("portfolio_button_controls");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++)
+  {
+    btns[i].addEventListener("click", function()
+    {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
   </script>
   </body>
 </html>

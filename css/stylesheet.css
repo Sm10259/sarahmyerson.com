@@ -172,6 +172,19 @@ h1, h2 {
 	box-shadow: none;
 }
 
+/** Filter Section **/
+.filterDiv {
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+#portfolio_button_controls {
+  padding-bottom: 30px;
+}
 
 /** Divider **/
 
